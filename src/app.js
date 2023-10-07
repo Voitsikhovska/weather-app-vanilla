@@ -55,9 +55,9 @@ function handleSubmit(event) {
 }
 function search(city) {
   let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
-
+  //https://api.shecodes.io/weather/v1/forecast?query={query}&key={key}
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-
+  //t62oaf0e05d0f2b5bee9a3d5baf3caf4
   axios.get(apiUrl).then(displayTemperarure);
 }
 
